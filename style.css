@@ -1,0 +1,591 @@
+/*------------------------- */
+/*------------------------- */
+
+/*ESTILOS GENERALES */
+/*------------------------- */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+*::selection {
+  background: #33257e;
+  color: #fff;
+}
+
+*::-moz-selection {
+  background: #33257e;
+  color: #fff;
+}
+
+body {
+  background: url(https://images.unsplash.com/photo-1552588355-23e1b81409cd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1270&q=80);
+  color: #fff;
+}
+
+.contenedor {
+  max-width: 500px;
+  width: 90%;
+  margin: 40px auto;
+
+  border-radius: 60px;
+  background: url(https://images.unsplash.com/photo-1551043047-1d2adf00f3fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+  padding: 20px;
+}
+
+/*------------------------- */
+/*------------------------- */
+
+/*ESTILOS DE LOGO */
+/*------------------------- */
+
+.titulo {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 55px;
+  max-width: 60px;
+  width: 90%;
+  margin-left: 17vh;
+}
+
+/*------------------------- */
+/*------------------------- */
+
+/*ESTILOS DE COlUMNA */
+/*------------------------- */
+
+.app .fila {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.app .col {
+  width: 50%;
+}
+
+/*------------------------- */
+/*------------------------- */
+
+/*ESTILOS DE INPUTS Y BTN */
+/*------------------------- */
+
+.app label {
+  line-height: 40px;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 30px;
+}
+
+.app input {
+  margin-top: 7px;
+  margin-left: 7px;
+  text-align: center;
+  border: none;
+  width: 100%;
+}
+
+.app .btn {
+  margin: 7px;
+  width: 100%;
+  background: #a8e7f2;
+  color: #333;
+  display: inline-block;
+  height: 40px;
+  vertical-align: top;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.app .btn:hover {
+  background: #b4a5ff;
+}
+
+/*------------------------- */
+/*------------------------- */
+
+/*NUMERO DE CARACTERES----- */
+/*------------------------- */
+
+.app .numero-caracteres .botones div {
+  width: 100%;
+}
+
+#btn-menos-uno {
+  border-radius: 4px 0 0 4px;
+}
+
+#numero-caracteres {
+  height: 40px;
+  width: 100%;
+  cursor: default;
+}
+
+#btn-mas-uno {
+  border-radius: 0 4px 4px 0;
+}
+
+.botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*------------------------- */
+/*------------------------- */
+
+/*GENERAR CONTRASEÑA------- */
+/*------------------------- */
+
+.app .fila.generar {
+  margin-bottom: 10px;
+}
+
+.app .fila.generar .col:nth-child(1) {
+  width: 30%;
+}
+
+.app .fila.generar .col:nth-child(2) {
+  width: 65%;
+}
+
+.app .fila.generar .btn.btn-generar {
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  padding: 0;
+  line-height: 40px;
+  position: relative;
+}
+
+.btn-generar i {
+  margin-left: 20px;
+  position: relative;
+  top: -1px;
+  font-size: 14px;
+}
+
+.btn.btn-generar:after {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: #000;
+}
+
+.fila.generar .input-password {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: #0ecae8;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  margin-left: 15px;
+}
+
+.fila.generar .input-password:hover {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+/*------------------------- */
+/*------------------------- */
+/*FILA ALERTA */
+/*------------------------- */
+
+.fila.alerta {
+  justify-content: flex-end;
+}
+
+.fila.alerta .alerta-copiado {
+  width: 65%;
+}
+
+.fila.alerta .col {
+  width: 65%;
+}
+
+.alerta-copiado {
+  text-align: center;
+  margin-left: 10vh;
+  color: rgba(255, 255, 255, 0);
+  transition: all 0.3s ease;
+}
+
+.alerta-copiado i {
+  font-size: 12px;
+}
+
+.alerta-copiado p {
+  font-size: 12px;
+}
+
+.alerta-copiado.active {
+  color: rgba(255, 255, 255, 1);
+}
+
+/*------------------------- */
+/*------------------------- */
+
+/*REDES--FILA ALERTA */
+/*------------------------- */
+
+.redes {
+  max-width: 50px;
+  width: 90%;
+  display: inline-block;
+  margin-left: 24vh;
+  margin-top: -15vh;
+}
+
+/*------------------------- */
+/*------------------------- */
+
+/*REDES--FILA ALERTA */
+/*------------------------- */
+
+.app .fila .col {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/*------------------------- */
+/*------------------------- */
+
+/*MEDIA QUERIES */
+/*------------------------- */
+
+@media screen and (min-width: 320px) {
+  /*-------ESTILOS GENERALES--------- */
+  .contenedor {
+    width: 100%;
+    padding: 20px;
+    height: 80%;
+  }
+
+  /*ESTILOS DE LOGO */
+
+  .titulo {
+    font-size: 35px;
+    width: 90%;
+    text-align: center;
+  }
+
+  /*ESTILOS DE INPUTS Y BTN */
+  /*------------------------- */
+
+  .app label {
+    line-height: 30px;
+    width: 10%;
+    font-family: "Luckiest Guy", cursive;
+    font-size: 30px;
+  }
+  #btn-mas-uno {
+    width: 37px;
+  }
+
+  #numero-caracteres {
+    width: 46px;
+    margin-left: -18px;
+    margin-top: 0px;
+  }
+
+  .app .btn {
+    margin: 0px;
+    width: 50%;
+    height: 40px;
+    font-size: 16px;
+  }
+  .col.botones {
+    margin-left: -17px;
+    margin-top: 17px;
+  }
+  #btn-simbolos {
+    margin-left: 51px;
+  }
+  #btn-numeros {
+    margin-left: 51px;
+  }
+  #btn-mayusculas {
+    margin-left: 13px;
+    width: 57px;
+  }
+  #btn-generar {
+    width: 103px;
+  }
+  #input-password {
+    width: 147px;
+    margin-top: 1px;
+  }
+  #btn-generar i {
+    display: none;
+  }
+  #btn-generar {
+    margin-left: -3px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  .app label {
+    line-height: 25px;
+    width: 10%;
+    font-family: "Luckiest Guy", cursive;
+    font-size: 30px;
+  }
+
+  #btn-menos-uno {
+    width: 37px;
+    margin-left: 21px;
+    margin-top: 10px;
+  }
+
+  #btn-mas-uno {
+    width: 37px;
+
+    margin-top: 10px;
+  }
+
+  #numero-caracteres {
+    width: 69px;
+    margin-left: -9px;
+    margin-top: 10px;
+  }
+
+  #btn-simbolos {
+    margin-left: 62px;
+    width: 97px;
+  }
+  #btn-numeros {
+    margin-left: 62px;
+    width: 97px;
+  }
+  #btn-mayusculas {
+    margin-left: 25px;
+    width: 97px;
+  }
+  #btn-generar {
+    margin-left: 17px;
+  }
+  #input-password {
+    width: 165px;
+    margin-top: 1px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  /*-------ESTILOS GENERALES--------- */
+  .contenedor {
+    width: 100%;
+    padding: 20px;
+    height: 80%;
+  }
+
+  /*ESTILOS DE LOGO */
+
+  .titulo {
+    font-size: 45px;
+    width: 90%;
+    text-align: center;
+  }
+
+  /*ESTILOS DE INPUTS Y BTN */
+  /*------------------------- */
+
+  .app label {
+    line-height: 25px;
+    width: 10%;
+    font-family: "Luckiest Guy", cursive;
+    font-size: 30px;
+  }
+
+  #numero-caracteres {
+    width: 61px;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+
+  #btn-menos-uno {
+    margin-left: 31px;
+  }
+  .col.botones {
+    margin-left: -17px;
+    margin-top: 17px;
+  }
+  #btn-simbolos {
+    margin-left: 62px;
+  }
+  #btn-numeros {
+    margin-left: 62px;
+  }
+  #btn-mayusculas {
+    margin-left: 40px;
+    width: 78px;
+  }
+  #btn-generar {
+    margin-left: 36px;
+  }
+  #input-password {
+    width: 165px;
+    margin-top: 1px;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  /*ESTILOS DE INPUTS Y BTN */
+  /*------------------------- */
+
+  .app label {
+    line-height: 25px;
+    width: 10%;
+    font-family: "Luckiest Guy", cursive;
+    font-size: 30px;
+  }
+
+  #btn-simbolos {
+    margin-left: 62px;
+  }
+  /*-------ESTILOS GENERALES--------- */
+  .contenedor {
+    width: 100%;
+    padding: 20px;
+    height: 80%;
+  }
+
+  /*ESTILOS DE LOGO */
+
+  .titulo {
+    font-size: 45px;
+    width: 90%;
+    text-align: center;
+  }
+
+  /*ESTILOS DE INPUTS Y BTN */
+  /*------------------------- */
+
+  .app label {
+    line-height: 25px;
+    width: 10%;
+    font-family: "Luckiest Guy", cursive;
+    font-size: 30px;
+  }
+
+  #numero-caracteres {
+    width: 83px;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+
+  #btn-menos-uno {
+    margin-left: 31px;
+  }
+  .col.botones {
+    margin-left: -17px;
+    margin-top: 17px;
+  }
+  #btn-simbolos {
+    margin-left: 62px;
+    width: 104px;
+  }
+  #btn-numeros {
+    margin-left: 62px;
+    width: 104px;
+  }
+  #btn-mayusculas {
+    margin-left: 64px;
+    width: 102px;
+  }
+  #btn-generar {
+    margin-left: 36px;
+  }
+  #input-password {
+    width: 201px;
+    margin-top: 1px;
+  }
+}
+@media screen and (min-width: 480px) {
+  /*ESTILOS DE INPUTS Y BTN */
+  /*------------------------- */
+
+  .app label {
+    line-height: 25px;
+    width: 10%;
+    font-family: "Luckiest Guy", cursive;
+    font-size: 30px;
+  }
+
+  #numero-caracteres {
+    width: 108px;
+    margin-left: -9px;
+    margin-top: 0px;
+  }
+
+  #btn-menos-uno {
+    margin-left: 31px;
+  }
+  .col.botones {
+    margin-left: -17px;
+    margin-top: 17px;
+  }
+  #btn-simbolos {
+    margin-left: 62px;
+    width: 129px;
+  }
+  #btn-numeros {
+    margin-left: 62px;
+    width: 129px;
+  }
+  #btn-mayusculas {
+    margin-left: 61px;
+    width: 129px;
+  }
+  #btn-generar {
+    margin-left: 75px;
+    width: 124px;
+  }
+
+  #input-password {
+    width: 192px;
+    margin-top: 1px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .titulo {
+    font-size: 63px;
+    width: 90%;
+    text-align: center;
+  }
+  /*ESTILOS DE INPUTS Y BTN */
+  /*------------------------- */
+
+  .app label {
+    line-height: 25px;
+    width: 10%;
+    font-family: "Luckiest Guy", cursive;
+    font-size: 30px;
+  }
+
+  #numero-caracteres {
+    width: 137px;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+
+  #btn-generar {
+    margin-left: 41px;
+    width: 124px;
+  }
+
+  #input-password {
+    width: 284px;
+    margin-top: 1px;
+    margin-left: -9px;
+  }
+}
